@@ -19,5 +19,4 @@ WITH User_Posts AS (
 
 SELECT user_id,
        EXTRACT(DAY FROM (last_post - first_post)) AS days_between
-FROM UserPosts;
-
+FROM User_Posts ;

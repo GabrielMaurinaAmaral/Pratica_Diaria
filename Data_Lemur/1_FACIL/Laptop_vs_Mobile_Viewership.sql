@@ -8,11 +8,7 @@
 
 SELECT
     SUM(CASE WHEN device_type = 'tablet' 
-        THEN 1 
-        ELSE 0 
-        END) AS tablet_views,
+        THEN 1 ELSE 0 END) AS tablet_views,
     SUM(CASE WHEN device_type IN ('laptop', 'phone') 
-        THEN 1 
-        ELSE 0 
-        END) AS mobile_views
+        THEN 1 ELSE 0 END) AS mobile_views
 FROM viewership;
